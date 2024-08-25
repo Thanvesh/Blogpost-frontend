@@ -98,7 +98,7 @@ const PostDetailsView = ({ isLoggedIn, user }) => {
                         </div>
                     ) : (
                         <>
-                            {post.author._id === user._id && (
+                            {isLoggedIn && post.author._id === user._id && (
                                 <IoMdMenu className='post-action-icon' onClick={() => setShowButton(!showButton)} />
                             )}
                             <div className={`${showButton ? "visible" : "hide"}`}>
