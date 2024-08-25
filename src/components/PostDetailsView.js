@@ -78,7 +78,7 @@ const PostDetailsView = ({ isLoggedIn, user }) => {
         setShowCommentModal(!showCommentModal);
     };
 
-    if (loading) return <div className="loader"><ScaleLoader color="#3498db" /></div>;
+    if (loading) return <div className='new'> <div className="loader"><ScaleLoader color="#3498db" /></div></div>;
     if (!post) return <p>No post found.</p>;
 
     return (
