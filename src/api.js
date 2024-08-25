@@ -1,7 +1,7 @@
 // src/api/api.js
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000';  // Adjust the URL based on your backend setup
+const API_URL = 'https://blogpostapp-2mz1.onrender.com';  // Adjust the URL based on your backend setup
 
 export const api = axios.create({
     baseURL: API_URL,

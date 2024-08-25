@@ -16,6 +16,12 @@ const App = () => {
     const [user, setUser] = useState(null);
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+    const handleLogout = () => {
+        setIsLoggedIn(false); // Update logged-in state
+        setUser(null); // Clear user data
+        localStorage.removeItem('token'); // Remove token from localStorage
+        localStorage.removeItem('user'); // Remove user from localStorage
+    };
 
 
 
@@ -38,14 +44,14 @@ const App = () => {
             <div className="app-container">
                 <Routes>
                     {/* Public routes without Header and Sidebar */}
-                    <Route path="/login" element={<Login setUser={setUser} setIsLoggedIn={setIsLoggedIn} />} />
+                    <Route path="/login" element={<Login setUser={setUser} setIsLoggedIn={setIsLoggedIn}  />} />
                     <Route path="/signup" element={<Signup />} />
 
                     {/* Routes with Header and Sidebar */}
                     <Route
                         path="/"
                         element={
-                            <MainLayout isLoggedIn={isLoggedIn} user={user}>
+                            <MainLayout isLoggedIn={isLoggedIn} user={user} handleLogout={handleLogout}>
                                 <Home isLoggedIn={isLoggedIn} user={user} />
                             </MainLayout>
                         }
@@ -53,7 +59,7 @@ const App = () => {
                     <Route
                         path="/post/:id"
                         element={
-                            <MainLayout isLoggedIn={isLoggedIn} user={user}>
+                            <MainLayout isLoggedIn={isLoggedIn} user={user} handleLogout={handleLogout}>
                                 <PostDetailsView user={user} />
                             </MainLayout>
                         }
@@ -61,7 +67,7 @@ const App = () => {
                     <Route
                         path="/search"
                         element={
-                            <MainLayout isLoggedIn={isLoggedIn} user={user}>
+                            <MainLayout isLoggedIn={isLoggedIn} user={user} handleLogout={handleLogout}>
                                 <SearchPage />
                             </MainLayout>
                         }
@@ -72,7 +78,7 @@ const App = () => {
                             <PrivateRoute
                                 isLoggedIn={isLoggedIn}
                                 element={()=>(
-                                    <MainLayout isLoggedIn={isLoggedIn} user={user}>
+                                    <MainLayout isLoggedIn={isLoggedIn} user={user} handleLogout={handleLogout}>
                                         <ProfilePage setUser={setUser} user={user} />
                                     </MainLayout>
     )}

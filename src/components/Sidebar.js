@@ -5,12 +5,11 @@ import { TbFolderSearch } from 'react-icons/tb';
 import { IoCreateOutline } from 'react-icons/io5';
 import { CgProfile } from 'react-icons/cg';
 import { IoLogOutOutline } from 'react-icons/io5';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import './Sidebar.css';
 
-const Sidebar = ({ isLoggedIn, isSidebarOpen }) => {
+const Sidebar = ({ isLoggedIn, isSidebarOpen,handleLogout }) => {
   const [sidebarClass, setSidebarClass] = useState('closed');
-  const navigate = useNavigate();  // Ensure the hook is properly invoked
 
   useEffect(() => {
     if (window.innerWidth > 768) {
@@ -34,10 +33,7 @@ const Sidebar = ({ isLoggedIn, isSidebarOpen }) => {
 
 
   const onLogout = () => {
-    // Logout logic
-    localStorage.removeItem('token'); // Remove token from localStorage
-    localStorage.removeItem('user')
-    navigate('/'); // Redirect user to home page after logout
+   handleLogout()
   };
 
   return (
