@@ -1,0 +1,146 @@
+.main-content-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  height: 100%;
+  padding: 30px;
+}
+
+.create-post-btn {
+  background: linear-gradient(135deg, #074d59, #440a51);
+  color: #fff;
+  border: none;
+  border-radius: 30px; /* More rounded for a modern look */
+  cursor: pointer;
+  font-size: 15px; /* Slightly larger font size for better readability */
+  font-weight: bold;
+  align-self: flex-end;
+ 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for all effects */
+  max-width: 100px; /* Increased width for a more prominent button */
+  width:70px;
+  text-align: center; /* Center text horizontally */
+  display: flex; /* Use flexbox to center the content */
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-right:20px ;
+
+}
+
+.create-post-btn:hover {
+  background: linear-gradient(135deg, #440a51, #074d59); /* Darker gradient on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+  transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+.create-post-btn:active {
+  background: linear-gradient(135deg, #003d7a, #0056b3); /* Even darker gradient on click */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
+  transform: translateY(1px); /* Slight inset effect on click */
+}
+
+.post-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  max-width: 600px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.post-card:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.post-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+  align-self: flex-start;
+}
+
+.author-image {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.author-name {
+  font-weight: bold;
+  color: #333;
+  font-size: 15px; /* Larger font size for author name */
+}
+
+.post-title {
+  font-size: 24px; /* Larger font size for post title */
+  margin: 10px 0;
+}
+
+.post-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.post-content {
+  font-size: 16px; /* Adjust font size for post content */
+  color: #666;
+  line-height: 1.6; /* Better line height for readability */
+}
+
+.read-more-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.read-more-link:hover {
+  color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .create-post-btn {
+    top: 10px;
+    right: 10px;
+    padding: 8px 16px; /* Adjusted padding for smaller screens */
+  }
+
+  .post-card {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .post-image {
+    max-width: 100%;
+  }
+}
+
+.post-card h2{
+  text-align: center;
+  font-size: 24px;
+}
+
+.post-card p{
+  text-align: center;
+}

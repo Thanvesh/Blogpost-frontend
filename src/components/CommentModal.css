@@ -1,0 +1,154 @@
+.comment-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  height: 70%;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+
+.comment-input-section {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  filter: contrast(120%);
+}
+
+textarea {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  resize: none;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-right: 10px;
+  outline: none;
+}
+
+textarea::placeholder {
+  color: #999;
+}
+
+.comment-input-section button {
+  background-color: #650b8b;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 12px;
+  margin: auto auto;
+  margin-left: 4px;
+
+}
+
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.comment-main {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+}
+
+.comment-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  width: 70%;
+
+}
+
+.showCommentBtn {
+  display: flex;
+  /* Add any other styles you need for visible state */
+}
+
+.btnSection-comment{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.notShowBtn {
+  display: none;
+  /* Add any other styles you need for hidden state */
+}
+
+.comment-header {
+  margin: auto auto;
+}
+
+.comment-username {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.comment-text-details {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 0px;
+  align-self: center;
+  width:70% ;
+  text-align: center;
+}
+
+.comment-btn-section {
+  margin-top: 5px;
+  width: 30%;
+}
+
+.comment-btn-section button {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 12px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.comment-btn-section button:hover {
+  text-decoration: underline;
+}
+
+.comment-btn-section button:last-child {
+  color: #dc3545;
+}

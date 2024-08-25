@@ -1,0 +1,111 @@
+/* src/styles/ProfilePage.css */
+.profile-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.profile-view, .profile-edit {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.profile-pic-container {
+  position: relative;
+}
+
+.profile-pic, .profile-pic-edit {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 4px solid #36d7b7;
+}
+
+.profile-pic-edit {
+  cursor: pointer;
+}
+
+.upload-input {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.profile-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.profile-email, .profile-bio {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.edit-button, .save-button, .cancel-button {
+  background-color: #36d7b7;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.edit-button:hover, .save-button:hover, .cancel-button:hover {
+  background-color: #2aa086;
+}
+
+.cancel-button {
+  background-color: #e74c3c;
+  margin-left: 10px;
+}
+
+.input-field, .textarea-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.textarea-field {
+  height: 100px;
+  resize: none;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.edit-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}

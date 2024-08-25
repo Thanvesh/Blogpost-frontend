@@ -1,0 +1,125 @@
+/* src/styles/SearchPage.css */
+
+.search-page {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1200px; /* Adjust to fit your design */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f5f5f5; /* Light background for better contrast */
+}
+
+.search-page input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+}
+
+.search-page input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.search-posts-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.search-post-card {
+  border: 1px solid #ddd;
+  border-radius: 10px; /* More rounded corners */
+  margin-bottom: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.search-post-card:hover {
+  transform: scale(1.03); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+.search-post-header {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9); /* Slight background for better visibility */
+  padding: 5px;
+  border-radius: 5px;
+  align-self: flex-start;
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.search-post-header:hover {
+  background-color: rgba(255, 255, 255, 1); /* Fully opaque on hover */
+}
+
+.search-author-img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  transition: transform 0.3s ease; /* Smooth transitions for image */
+}
+
+.search-author-img:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.search-blog-img {
+  width: 100%; /* Adjust to full width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* More rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-blog-img:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.search-post-card h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.search-post-card p {
+  font-size: 16px;
+  color: #555;
+  width: 70%;
+  text-align: center;
+  transition: color 0.3s ease; /* Smooth text color transition */
+}
+
+.search-post-card:hover p {
+  color: #333; /* Darker text color on hover */
+}
+
+.search-post-card a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.search-post-card a:hover {
+  color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}

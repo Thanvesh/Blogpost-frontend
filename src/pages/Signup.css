@@ -1,0 +1,74 @@
+/* General styles for the signup page */
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.signup-form {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.signup-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.signup-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-form button:hover {
+    background-color: #0056b3;
+}
+
+.signup-form p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup-form span {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.signup-form span:hover {
+    color: #0056b3;
+}
+/* Existing styles... */
+
+.error {
+    color: #d9534f; /* Bootstrap danger color */
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
