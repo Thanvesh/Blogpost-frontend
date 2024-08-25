@@ -64,3 +64,15 @@
 .login-form span:hover {
     color: #0056b3;
 }
+
+
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
