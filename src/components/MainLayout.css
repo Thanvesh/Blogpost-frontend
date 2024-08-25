@@ -23,7 +23,7 @@ header {
 
 .sidebar {
     width: 5%;
-    background-color: transparent;
+    background-color:#fff;
     color: #000000;
     height: 80%; /* Height of the content area */
     display: flex;
